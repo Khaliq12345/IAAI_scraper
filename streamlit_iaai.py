@@ -48,7 +48,7 @@ def scraper():
             progress.metric('Pages scraped', n)
             try:
                 page.frame_locator("#kampyleInvite").get_by_role("button", name="Close Survey").click(timeout=1000)
-                sleep(5)
+                sleep(2)
             except:
                 pass
 
@@ -101,9 +101,9 @@ def scraper():
             if next_page.is_disabled():
                 break
             page.click('.btn-next')
-            sleep(5)
+            sleep(2)
             page.wait_for_load_state('networkidle')
-            sleep(5)
+            sleep(2)
 
         browser.close()
 
