@@ -31,7 +31,7 @@ def scraper():
     item_list = []
     with sync_playwright() as playwright:
         chrome = playwright.chromium
-        browser = chrome.launch(headless=False)
+        browser = chrome.launch()
         #context = browser.new_context(storage_state="auth.json")
         context = browser.new_context()
         page = context.new_page()
