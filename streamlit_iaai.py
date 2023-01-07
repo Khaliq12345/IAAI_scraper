@@ -63,7 +63,7 @@ def scraper():
                 lists = []
                 for x in card.select('.data-list__item span'):
                     try:
-                        x['title']
+                        test_ = x['title']
                         lists.append(x)
                     except:
                         pass
