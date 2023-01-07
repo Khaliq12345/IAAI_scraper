@@ -120,8 +120,8 @@ def scraper():
 )
 
 
-st.title('IAAI SCRAPER 🪞')
-st.caption('A scraper to scrape IAAI')
+st.title('IAAI SCRAPER')
+st.caption('A scraper to car information from IAAI.com')
 st.caption('Note that you might get an error is you paste link other than the listing link')
 
 with st.form('myForm'):
